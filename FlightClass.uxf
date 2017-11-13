@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.2">
+  <zoom_level>7</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>0</x>
+      <y>84</y>
+      <w>112</w>
+      <h>161</h>
+    </coordinates>
+    <panel_attributes>Customer
+--
+Name
+Address
+Phone No
+Credit Card
+--
+EnterName()
+EnterAddress()
+EnterPhoneNo()
+EnterPaymentDetails()
+EnterFlightType()
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>420</x>
+      <y>266</y>
+      <w>105</w>
+      <h>154</h>
+    </coordinates>
+    <panel_attributes>Flight
+--
+Number 
+Size
+Type of Flight
+Destination
+Dep Date/Time
+--
+ReturnFlightNo()
+ReturnSize()
+ReturnFlightType()
+ReturnDestination()
+ReturnDepDate()
+ReturnDepTime()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>371</x>
+      <y>476</y>
+      <w>91</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>Domestic
+--
+Maximum Baggage
+--</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>483</x>
+      <y>476</y>
+      <w>91</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>International
+--
+Record Destination
+--</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>189</x>
+      <y>287</y>
+      <w>91</w>
+      <h>105</h>
+    </coordinates>
+    <panel_attributes>Seat
+--
+Number
+--
+ReturnSeatNo()
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>189</x>
+      <y>84</y>
+      <w>91</w>
+      <h>133</h>
+    </coordinates>
+    <panel_attributes>Booking
+--
+Number
+Date 
+Type of Flight
+Cost
+--
+ReturnBookingNo()
+ReturnDate()
+ReturnFlightType()
+CalculateCost()
+ReturnCost()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>462</x>
+      <y>413</y>
+      <w>21</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;40.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>399</x>
+      <y>434</y>
+      <w>140</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>lt=-</panel_attributes>
+    <additional_attributes>10.0;60.0;10.0;10.0;180.0;10.0;180.0;60.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>105</x>
+      <y>119</y>
+      <w>98</w>
+      <h>35</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1
+m2=0..*
+Makes a &gt;</panel_attributes>
+    <additional_attributes>10.0;20.0;120.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>224</x>
+      <y>210</y>
+      <w>56</w>
+      <h>91</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1
+m2=1..*
+books &gt;</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;110.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>273</x>
+      <y>308</y>
+      <w>161</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+Consists of</panel_attributes>
+    <additional_attributes>210.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+</diagram>
