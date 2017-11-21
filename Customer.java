@@ -38,7 +38,7 @@ public class Customer {
 	 */
 	public String getName()
 	{
-		return "Fname + Lname";
+		return (Fname + Lname);
 	}
 	/**
 	 * 
@@ -87,3 +87,4 @@ public class Customer {
 	
 	}
 }
+
