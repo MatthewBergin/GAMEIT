@@ -15,32 +15,31 @@ public class CustomerTester {
 		 * Create customer object
 		 */
 		Customer customer = new Customer("Shaun", "McFadden", "Donegal","0987667878", 7265638);
-		customer.toString();
+		System.out.println(customer.toString());
 		/**
 		 * Return name
 		 */
-		customer.getName();
+		System.out.println(customer.getName());
 		/**
 		 * get and set address
 		 */
-		customer.getAddress();
+		System.out.println(customer.getAddress());
 		customer.setAddress("letterkenny");
-		customer.getAddress();
+		System.out.println(customer.getAddress());
 		/**
 		 * get and set phone number
 		 */
-		customer.getPhoneNo();
+		System.out.println(customer.getPhoneNo());
 		customer.setPhoneNo("187987236");
-		customer.getPhoneNo();
+		System.out.println(customer.getPhoneNo());
 		/**
 		 * get credit card number
 		 */
-		customer.getCreditNo();
+		System.out.println(customer.getCreditNo());
 		/**
 		 * return all info
 		 */
-		customer.toString();
+		System.out.println(customer.toString());
 	}
 
 }
-
