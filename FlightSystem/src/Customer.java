@@ -8,8 +8,8 @@
 
 public class Customer {
 	String Fname, Lname;
-	String street, town, county;
-	int creditCardNo, passportNo, PhoneNo;
+	String street, town, county, creditCardNo,PhoneNo;
+	int  passportNo;
 	
 	/**
 	 * 
@@ -29,7 +29,7 @@ public class Customer {
 	 *Customer Constructor
 	 *And all parameters
 	 */
-	public Customer(int passportNo, String fname, String lname, String street, String town, String county, int phoneNum, int credNo)
+	public Customer(int passportNo, String fname, String lname, String street, String town, String county, String phoneNum, String credNo)
 	{
 		this.passportNo = passportNo;
 		Fname = fname;
@@ -70,7 +70,7 @@ public class Customer {
 	 * 
 	 * @return phone number
 	 */
-	public int getPhoneNo()
+	public String getPhoneNo()
 	{
 		return PhoneNo;
 	}
@@ -78,7 +78,7 @@ public class Customer {
 	 * Set the phone number
 	 * @param number
 	 */
-	public void setPhoneNo(int number)
+	public void setPhoneNo(String number)
 	{
 		PhoneNo = number;
 	}
@@ -86,7 +86,7 @@ public class Customer {
 	 * 
 	 * @return Credit card No
 	 */
-	public int getCreditNo()
+	public String getCreditNo()
 	{
 		return creditCardNo;
 	}

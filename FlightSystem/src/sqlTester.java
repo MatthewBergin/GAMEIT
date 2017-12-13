@@ -74,7 +74,7 @@ public class sqlTester {
 			 * step through the customer table contents 
 			 */
 			while(rs2.next())
-				customer = new Customer(rs2.getInt(1), rs2.getString(2), rs2.getString(3), rs2.getString(4), rs2.getString(5) ,rs2.getString(6) , rs2.getInt(7),  rs2.getInt(8));
+				customer = new Customer(rs2.getInt(1), rs2.getString(2), rs2.getString(3), rs2.getString(4), rs2.getString(5) ,rs2.getString(6) , rs2.getString(7),  rs2.getString(8));
 			con2.close();
 			
 	

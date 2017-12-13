@@ -14,7 +14,7 @@ public class CustomerTester {
 		/**
 		 * Create customer object
 		 */
-		Customer customer = new Customer(12345, "Shaun", "McFadden", "Ashlawn", "Letterkenny", "Domegal",7667878, 125151);
+		Customer customer = new Customer(12345, "Shaun", "McFadden", "Ashlawn", "Letterkenny", "Domegal","7667878", "125151");
 		System.out.println(customer.toString());
 		/**
 		 * Return name
@@ -30,7 +30,7 @@ public class CustomerTester {
 		 * get and set phone number
 		 */
 		System.out.println(customer.getPhoneNo());
-		customer.setPhoneNo(187987236);
+		customer.setPhoneNo("187987236");
 		System.out.println(customer.getPhoneNo());
 		/**
 		 * get credit card number
