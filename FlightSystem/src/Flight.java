@@ -27,6 +27,8 @@ public class Flight {
 	 * enter all parameters
 	 */
 	public Flight(int flightNo, int size, String flightType, String destination, Date depDate, Date arrDate, int maxBaggage, int seatnum) {
+		try
+		{
 		this.flightNo = flightNo;
 		this.size = size;
 		this.flightType = flightType;
@@ -35,6 +37,8 @@ public class Flight {
 		this.arrDate = arrDate;
 		this.maxBaggage = maxBaggage;
 		this.seatnum = seatnum;
+		}
+		catch(Exception e) {System.out.print(e); }
 	}
 	/**
 	 * 

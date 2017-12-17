@@ -28,11 +28,14 @@ public class Booking {
 	 */
 	public Booking(int bookingNo, Date flightDate, String flightType, double cost, int seatnum)
 	{
+		try {
 		this.bookingNo = bookingNo;
 		this.flightDate = flightDate;
 		this.flightType = flightType;
 		this.seatnum = seatnum;
 		CalculateCost(flightType);
+		}
+		catch(Exception e) {System.out.print(e); }
 	}
 	/**
 	 * empty Booking Constructor

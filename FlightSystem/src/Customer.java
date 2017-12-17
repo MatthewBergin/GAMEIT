@@ -31,6 +31,9 @@ public class Customer {
 	 */
 	public Customer(int passportNo, String fname, String lname, String street, String town, String county, String phoneNum, String credNo)
 	{
+		try
+		{
+		
 		this.passportNo = passportNo;
 		Fname = fname;
 		Lname = lname;
@@ -39,6 +42,8 @@ public class Customer {
 		this.county = county;
 		PhoneNo = phoneNum; 
 		creditCardNo = credNo;
+		}
+		catch(Exception e) {System.out.print(e); }
 	}
 	/**
 	 * 
@@ -62,10 +67,14 @@ public class Customer {
 	 */
 	public void setAddress(String street, String town, String county)
 	{
+		try {
 		this.street = street;
 		this.town = town;
 		this.county = county;
-	}
+		}
+		catch(Exception e) {System.out.print(e); }
+		
+		}
 	/**
 	 * 
 	 * @return phone number
@@ -80,7 +89,11 @@ public class Customer {
 	 */
 	public void setPhoneNo(String number)
 	{
+		try
+		{
 		PhoneNo = number;
+		}
+		catch(Exception e) {System.out.print(e); }
 	}
 	/**
 	 * 
